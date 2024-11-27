@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: "Adelle Sans";
+    src: url(/fonts/adelle-sans.otf) format(´opentype´);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AwanZaman";
+    src: url(/fonts/AwanZaman\ Medium.ttf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "rodona" ;
+    src: url(/fonts/Font_Rodona-Regular_BETA.ttf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "salih";
+    src: url(/fonts/Salih\ Kizilkaya\ -\ SK\ Reykjavik\ Rounded\ Regular.ttf) format('opentype');
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Adelle Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;   /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    background-color: #000;
+}
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+    margin-bottom: 100px; /* Espacio entre el logo y el formulario */
+
+}
+
+.logo {
+    width: 160px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+/* Estilo del formulario */
+.s_text {
+    background: #fff;
+    border-radius: 50px;
+    width: 480px;
+    height: 500px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    flex:content-box;
+}
+
+
+#s_product {
+    font-family: 'salih';
+    font-size: 34px;
+    font-weight: 500;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 70px;
+}
+span{
+    font-family: "Adelle Sans";
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+.s_field {
+    margin-bottom: 30px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.s_field label {
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Adelle Sans";
+}
+
+.s_field input {
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #668494;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.s_field input:focus {
+    box-shadow: 0 0 0 4px #FFB500;
+    outline: none;
+}
+
+#s_keepConnected_slot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.s_input_check {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.s_submit {
+    background-color: #008146;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Adelle Sans';
+}
+
+.s_submit:hover {
+    background-color: #006738;
+}
+
+#fullscreen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none; /* Oculto por defecto */
+    z-index: 9999;
+}
+
+#fullscreen-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
